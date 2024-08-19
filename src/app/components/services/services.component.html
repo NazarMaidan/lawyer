@@ -1,0 +1,14 @@
+<div class="services__wrap">
+    <div class="services__content">
+        <div class="services__header">Спеціалізації</div>
+        <div class="services__items">
+            @for(item of items; track item) {
+                <div class="services__item">
+                    <img src="assets/icons/handshake.png" alt="handshake" class="icon">
+                    <div class="header">{{item.header}}</div>
+                    <div class="desc">{{item.desc}}</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

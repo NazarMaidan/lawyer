@@ -1,0 +1,21 @@
+<div class="partners__wrap">
+    <div class="partners__content">
+        <div class="partners__list">
+            @for (partner of partners; track partners.name) {
+                <div class="partner">
+                    <img src="{{partner.img}}" alt="partner">
+                    <div class="desc">
+                        <div class="name">{{partner.name}}</div>
+                        <div class="position">{{partner.position}}</div>
+                    </div>
+                </div>
+            }
+            <div class="partner empty">
+                <div class="title">Партнери</div>
+                <div class="text">Якщо ваша компанія зіткнулися з судовим викликом, зв’яжіться з нами,
+                    щоб домовитися про консультацію.</div>
+                <div class="more">Детальніше <span> &#10095; </span></div>
+            </div>
+        </div>
+    </div>
+</div>
